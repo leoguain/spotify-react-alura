@@ -1,0 +1,31 @@
+.footer__Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #af2896, #509bf5);
+  padding: 0.5rem 1.5rem 0.5rem 1rem;
+  margin: 0.5rem;
+}
+
+.text__box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.text__title {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.text__subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+}

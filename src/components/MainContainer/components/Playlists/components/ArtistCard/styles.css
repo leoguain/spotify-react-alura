@@ -1,0 +1,58 @@
+.card__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-item: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 8px;
+  padding: 0.875rem;
+  cursor: pointer;
+  transition: 0.4s;
+  background: linear-gradient(transparent, #181818);
+}
+
+.card__container:hover {
+  background-color: #363636;
+}
+
+.card__container:hover .fa-play {
+  opacity: 1;
+  top: 6.5rem;
+}
+
+.artist__thumb {
+  border-radius: 99%;
+  width: 150px;
+  align-self: center;
+}
+
+.card__title {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.875rem;
+}
+
+.card__description {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.fa-play {
+  position: absolute;
+  color: #000;
+  right: 1.5rem;
+  top: 7rem;
+  padding: 1.125rem;
+  background-color: #1db954;
+  border-radius: 100%;
+  font-size: 1rem;
+  transition: all ease 0.4s;
+  opacity: 0;
+}
+
+.fa-play:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,10 @@
+.header__button {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.header__button:hover {
+  color: #fff;
+  transform: scale(1.1);
+}

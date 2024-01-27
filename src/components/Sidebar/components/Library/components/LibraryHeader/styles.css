@@ -1,0 +1,25 @@
+.library__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.library__button {
+  display: flex;
+  gap: 0.75rem;
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.library__button:hover {
+  color: #fff;
+}
+
+.library__header span {
+  cursor: pointer;
+}

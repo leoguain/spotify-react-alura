@@ -1,0 +1,20 @@
+main {
+  padding: 0.75rem;
+  max-width: 80vw;
+  margin-left: 310px;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(var(--secondary-color), var(--main-color) 100%);
+  border-radius: 8px;
+  overflow: auto;
+  height: 545px;
+}
+.main__container::-webkit-scrollbar-thumb {
+  visibility: hidden;
+}
+.main__container:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}

@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+:root {
+  /*FONT*/
+  --font-dm-sans: "DM Sans", sans-serif;
+
+  /*COLORS*/
+  --bg-color: #000;
+  --main-color: #121212;
+  --secondary-color: #242424;
+  --text-color: #b3b3b3;
+  --bg-icon: #131313;
+  --bg-arrow-color: rgba(0, 0, 0, 0.7);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  box-sizing: border-box;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-dm-sans);
+  letter-spacing: 1.2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+  height: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.white__button {
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+  color: var(--main-color);
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  transition: 0.4s;
 }
 
-.App-link {
-  color: #61dafb;
+.lg__button {
+  padding: 1rem 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.white__button:hover {
+  transform: scale(1.05);
 }

@@ -1,0 +1,39 @@
+.sidebar__navigation {
+  background-color: var(--main-color);
+  border-radius: 8px;
+  padding: 1rem 0 0 1rem;
+}
+
+.logo {
+  display: flex;
+  border-radius: 8px;
+  padding: 1rem 0 0 1rem;
+}
+
+.logo img {
+  width: 5rem;
+}
+
+.sidebar nav ul {
+  margin-top: 1.25rem;
+  padding: 0 1.25rem 0.4rem 1.25rem;
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  padding: 0.5rem 0;
+}
+
+.sidebar nav ul li a {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.sidebar nav ul li a:hover {
+  color: #fff;
+}

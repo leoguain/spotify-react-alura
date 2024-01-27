@@ -1,0 +1,37 @@
+/*SUB CONTAINER PROPS -------------------------------------------------------*/
+.playlist__container {
+  overflowy: scroll;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  overflow: auto;
+}
+
+.playlist__container::-webkit-scrollbar-thumb {
+  visibility: hidden;
+}
+
+.playlist__container:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+/*BOXES PROPS -------------------------------------------------------*/
+.box__container {
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem 1rem 1rem 1.25rem;
+  margin: 1rem 0;
+}
+
+.box__title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.box__subtitle {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
