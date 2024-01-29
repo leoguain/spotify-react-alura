@@ -14,8 +14,8 @@ export const Header = () => {
     const value = event.target.value;
     setSearchTerm(value);
 
-    loadArtists(searchTerm);
-    loadPlaylists(searchTerm);
+    loadArtists(value);
+    loadPlaylists(value);
   };
 
   return (
