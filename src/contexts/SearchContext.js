@@ -28,7 +28,7 @@ export const SearchContextProvider = ({ children }) => {
 
   const loadArtists = async (searchTerm) => {
     try {
-      const urlApi = `http://localhost:3000/artists?name_like=${searchTerm}`;
+      const urlApi = `http://localhost:3300/artists?name_like=${searchTerm}`;
 
       const response = await fetch(urlApi);
       const result = await response.json();
@@ -43,8 +43,8 @@ export const SearchContextProvider = ({ children }) => {
     try {
       const urlApi =
         searchTerm !== ""
-          ? `http://localhost:3000/playlists?name_like=${searchTerm}`
-          : `http://localhost:3000/playlists`;
+          ? `http://localhost:3300/playlists?name_like=${searchTerm}`
+          : `http://localhost:3300/playlists`;
 
       const response = await fetch(urlApi);
       const result = await response.json();

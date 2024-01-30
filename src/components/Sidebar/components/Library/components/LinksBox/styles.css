@@ -1,11 +1,11 @@
-.sidebar__links {
+.links__container {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  padding: 2rem 0.75rem;
+  padding: 1rem 0.75rem;
 }
 
-.sidebar__links a {
+.links__container a {
   color: var(--text-color);
   text-decoration: none;
 }

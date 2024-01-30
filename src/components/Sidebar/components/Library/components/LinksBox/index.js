@@ -1,36 +1,19 @@
 import React from "react";
 import "./styles.css";
+import { SmallLink } from "./components/SmallLink";
 
 export const LinksBox = () => {
   return (
-    <section className="sidebar__links">
-      <a className="links__item" href="/">
-        Legal
-      </a>
-      <a className="links__item" href="/">
-        Centro de Privacidade
-      </a>
-      <a className="links__item" href="/">
-        Política de Privacidade
-      </a>
-      <a className="links__item" href="/">
-        Cookies
-      </a>
-      <a className="links__item" href="/">
-        Sobre anúncios
-      </a>
-      <a className="links__item" href="/">
-        Acessibilidade
-      </a>
-      <a className="links__item" href="/">
-        Notice at Collection
-      </a>
-      <a className="links__item" href="/">
-        Your Privacy Choices
-      </a>
-      <a className="cookies__link" href="/">
-        Cookies
-      </a>
+    <section className="links__container">
+      <SmallLink text={"Legal"} className={"links__item"} />
+      <SmallLink text={"Centro de Privacidade"} className={"links__item"} />
+      <SmallLink text={"Política de Privacidade"} className={"links__item"} />
+      <SmallLink text={"Cookies"} className={"links__item"} />
+      <SmallLink text={"Sobre anúncios"} className={"links__item"} />
+      <SmallLink text={"Acessibilidade"} className={"links__item"} />
+      <SmallLink text={"Notice at Collection"} className={"links__item"} />
+      <SmallLink text={"Your Privacy Choices"} className={"links__item"} />
+      <SmallLink text={"Cookies"} className={"cookies__link"} />
     </section>
   );
 };

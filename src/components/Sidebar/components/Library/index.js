@@ -7,11 +7,13 @@ import { LibraryHeader } from "./components/LibraryHeader";
 
 export const Library = () => {
   return (
-    <div className="sidebar__library">
+    <div className="library__container">
       <LibraryHeader />
       <CreatePlaylist />
-      <LinksBox />
-      <LanguageSelector />
+      <div className="desktop-only__container">
+        <LinksBox />
+        <LanguageSelector />
+      </div>
     </div>
   );
 };

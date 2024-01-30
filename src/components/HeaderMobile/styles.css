@@ -1,0 +1,19 @@
+.header-mobile__container {
+  display: none;
+}
+
+.header-mobile__container span {
+  color: #fff;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header-mobile__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    z-index: 3;
+  }
+}

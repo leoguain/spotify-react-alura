@@ -3,14 +3,18 @@ import React from "react";
 import { Sidebar } from "./components/Sidebar";
 import { MainContainer } from "./components/MainContainer";
 import { Footer } from "./components/Footer";
+import { HeaderMobile } from "./components/HeaderMobile";
 
 function App() {
   return (
-    <React.Fragment>
-      <Sidebar />
-      <MainContainer />
+    <div className="content__container">
+      <HeaderMobile />
+      <div>
+        <Sidebar />
+        <MainContainer />
+      </div>
       <Footer />
-    </React.Fragment>
+    </div>
   );
 }
 

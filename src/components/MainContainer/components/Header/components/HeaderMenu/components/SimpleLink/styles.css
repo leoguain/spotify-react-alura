@@ -8,3 +8,9 @@
   color: #fff;
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 1024px) {
+  .header__button span {
+    font-size: 0.75rem;
+  }
+}

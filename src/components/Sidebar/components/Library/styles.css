@@ -1,6 +1,15 @@
-.sidebar__library {
-  margin-top: 0.5rem;
+.library__container {
   background-color: var(--main-color);
   border-radius: 8px;
   padding: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .library__container {
+    height: inherit;
+  }
+
+  .desktop-only__container {
+    display: none;
+  }
 }

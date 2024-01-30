@@ -1,85 +1,51 @@
-.header__navigator {
+.header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   border-radius: 8px 8px 0 0;
   background-color: var(--main-color);
-  padding: 0 1rem;
+  padding: 1rem;
   position: fixed;
+  top: 12px;
+  left: 325px;
+  right: 12px;
   z-index: 2;
 }
 
-.navigator {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  justify-content: space-around;
+@media screen and (max-width: 1024px) {
+  .header__container {
+    padding: 0.25rem 1rem;
+    left: 275px;
+  }
 }
 
-.navigator__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg-icon);
-  background-color: var(--bg-arrow-color);
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 2rem;
-  width: 2rem;
+@media screen and (max-width: 768px) {
+  .header__container {
+    padding: 0.25rem 2rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-around;
+    padding: 0.25rem 0;
+    width: 100%;
+  }
 }
 
-.header__search {
-  display: flex;
-  align-items: center;
-  background-color: var(--secondary-color);
-  border-radius: 50px;
-  border: 1px solid transparent;
-  width: 320px;
-  height: 48px;
-  margin-left: 8px;
+@media screen and (max-width: 640px) {
+  .header__container {
+    justify-content: space-around;
+    padding: 0.25rem 0;
+    width: 100%;
+  }
 }
 
-.header__search img {
-  width: 16px;
-  height: 16px;
-  margin-left: 10px;
-}
-
-.header__search input {
-  background: transparent;
-  border: none;
-  padding: 0 50px 0 12px;
-  color: #fff;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  outline: none;
-}
-
-.header__right-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 0;
-}
-
-.header__menu {
-  display: flex;
-  padding: 0 2rem;
-  border-right: 1px solid #fff;
-}
-
-.header__menu ul {
-  display: flex;
-  gap: 0.75rem;
-  list-style: none;
-}
-
-.header__login {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  padding: 0 0 0 2rem;
+@media screen and (max-width: 390px) {
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.25rem 0;
+  }
 }

@@ -5,8 +5,8 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 export const LanguageSelector = () => {
   return (
-    <section className="sidebar-language__selector">
-      <button className="languages__button">
+    <section className="language-selector__container">
+      <button className="language-selector__button">
         <FontAwesomeIcon icon={faGlobe} />
         <span>Português do Brasil</span>
       </button>

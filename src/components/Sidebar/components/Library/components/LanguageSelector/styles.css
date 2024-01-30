@@ -1,8 +1,8 @@
-.sidebar-language__selector {
+.language-selector__container {
   padding: 0.75rem;
 }
 
-.languages__button {
+.language-selector__button {
   display: flex;
   align-items: center;
   background-color: transparent;
@@ -17,12 +17,12 @@
   transition: 0.2s;
 }
 
-.languages__button span {
+.language-selector__button span {
   font-size: 0.75rem;
   font-weight: 600;
 }
 
-.languages__button:hover {
+.language-selector__button:hover {
   border: 1px solid #fff;
   transform: scale(1.05);
 }

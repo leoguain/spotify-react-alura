@@ -1,0 +1,16 @@
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.links__item {
+  font-size: 0.66rem;
+}
+
+.cookies__link {
+  font-size: 0.875rem;
+}
+
+.cookies__link:hover {
+  text-decoration: underline;
+}

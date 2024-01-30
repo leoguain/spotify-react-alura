@@ -1,8 +1,9 @@
-.card__container {
+.card-playlist__container {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-item: center;
+  align-self: center;
+  align-items: center;
   justify-content: center;
   gap: 0.5rem;
   border-radius: 8px;
@@ -10,13 +11,14 @@
   cursor: pointer;
   transition: 0.4s;
   background: linear-gradient(transparent, #181818);
+  width: 160px;
 }
 
-.card__container:hover {
+.card-playlist__container:hover {
   background-color: #363636;
 }
 
-.card__container:hover .fa-play {
+.card-playlist__container:hover .fa-play {
   opacity: 1;
   top: 6.5rem;
 }
@@ -24,7 +26,12 @@
 .playlist__thumb {
   border-radius: 8px;
   width: 150px;
-  align-self: center;
+}
+
+.texts__container {
+  display: flex;
+  flex-direction: column;
+  align-item: flex-start;
 }
 
 .card__title {
@@ -55,4 +62,16 @@
 
 .fa-play:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 480px) {
+  .texts__container {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .texts__container {
+    width: 160px;
+  }
 }

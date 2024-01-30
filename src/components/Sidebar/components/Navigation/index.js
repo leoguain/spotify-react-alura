@@ -1,35 +1,22 @@
 import React from "react";
 import "./styles.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faSearch } from "@fortawesome/free-solid-svg-icons";
 
-import spotifyLogo from "../../../../assets/icons/logo-spotify.png";
+import { NavigationLogo } from "./components/NavigationLogo";
+import { NavigationLink } from "./components/NavigationLink";
 
 export const Navigation = () => {
   return (
-    <nav className="sidebar__navigation">
-      <div className="logo">
-        <a href="/">
-          <img src={spotifyLogo} alt="logo do spotify" />
-        </a>
-      </div>
+    <nav className="navigation__container">
+      <NavigationLogo />
+
       <div>
         <ul>
           <li>
-            <a href="/">
-              <span>
-                <FontAwesomeIcon icon={faHome} />
-              </span>
-              <span>Início</span>
-            </a>
+            <NavigationLink text={"Início"} icon={faHome} href={"/"} />
           </li>
           <li>
-            <a href="/">
-              <span>
-                <FontAwesomeIcon icon={faSearch} />
-              </span>
-              <span>Buscar</span>
-            </a>
+            <NavigationLink text={"Buscar"} icon={faSearch} href={"/"} />
           </li>
         </ul>
       </div>

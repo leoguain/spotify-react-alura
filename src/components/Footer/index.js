@@ -3,7 +3,7 @@ import "./styles.css";
 
 export const Footer = () => {
   return (
-    <div className="footer__Container">
+    <div className="footer__container">
       <div className="text__box">
         <span className="text__title">Testar o Premium de graça</span>
         <span className="text__subtitle">

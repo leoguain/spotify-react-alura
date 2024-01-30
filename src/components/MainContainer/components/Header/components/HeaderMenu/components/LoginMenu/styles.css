@@ -1,0 +1,13 @@
+.login__container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 0 0 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .login__container {
+    padding: 0 0 0 1rem;
+    gap: 1rem;
+  }
+}

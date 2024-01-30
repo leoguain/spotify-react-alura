@@ -1,9 +1,7 @@
-.card__container {
+.card-artist__container {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-item: center;
-  justify-content: center;
   gap: 0.5rem;
   border-radius: 8px;
   padding: 0.875rem;
@@ -12,11 +10,11 @@
   background: linear-gradient(transparent, #181818);
 }
 
-.card__container:hover {
+.card-artist__container:hover {
   background-color: #363636;
 }
 
-.card__container:hover .fa-play {
+.card-artist__container:hover .fa-play {
   opacity: 1;
   top: 6.5rem;
 }
@@ -27,6 +25,12 @@
   align-self: center;
 }
 
+.texts__container {
+  display: flex;
+  flex-direction: column;
+  align-item: flex-start;
+  width: 100%;
+}
 .card__title {
   color: #fff;
   font-size: 1rem;

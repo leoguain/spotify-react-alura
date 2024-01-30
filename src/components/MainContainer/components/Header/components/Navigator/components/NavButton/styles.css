@@ -1,0 +1,18 @@
+.navigator__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-icon);
+  background-color: var(--bg-arrow-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+}
+
+@media screen and (max-width: 390px) {
+  .navigator__button {
+    display: none;
+  }
+}
