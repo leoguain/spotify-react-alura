@@ -1,0 +1,10 @@
+.login__menu {
+  width: 100%;
+}
+
+.login__menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+}

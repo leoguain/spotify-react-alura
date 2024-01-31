@@ -1,0 +1,11 @@
+.external__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .external__links {
+    align-self: center;
+  }
+}

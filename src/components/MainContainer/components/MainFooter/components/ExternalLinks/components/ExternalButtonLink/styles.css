@@ -1,0 +1,15 @@
+.button-external__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.button-external__links:hover {
+  background-color: #838383;
+}

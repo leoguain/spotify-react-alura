@@ -4,6 +4,8 @@ const initialValue = {
   noDataMsg: "",
   searchTerm: "",
   setSearchList: () => {},
+  dataFetched: false,
+  setDataFetched: () => {},
   artistsList: [],
   setArtistsList: () => {},
   playlistsList: [],
@@ -20,6 +22,7 @@ export const useSearch = () => {
 
 export const SearchContextProvider = ({ children }) => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [dataFetched, setDataFetched] = useState(false);
   const [artistsList, setArtistsList] = useState([]);
   const [playlistsList, setPlaylistsList] = useState([]);
 
@@ -61,6 +64,8 @@ export const SearchContextProvider = ({ children }) => {
         noDataMsg,
         searchTerm,
         setSearchTerm,
+        dataFetched,
+        setDataFetched,
         artistsList,
         setArtistsList,
         playlistsList,

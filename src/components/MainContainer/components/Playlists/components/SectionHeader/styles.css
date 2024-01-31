@@ -12,10 +12,6 @@
   text-decoration: none;
 }
 
-.main__link:hover {
-  text-decoration: underline;
-}
-
 .default__link {
   color: var(--text-color);
   font-weight: 700;
@@ -23,6 +19,7 @@
   text-decoration: none;
 }
 
+.main__link:hover,
 .default__link:hover {
   text-decoration: underline;
 }

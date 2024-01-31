@@ -52,6 +52,7 @@ main {
     flex-direction: column;
     border-radius: 8px;
     max-height: none;
+    margin-top: 4rem;
   }
 
   .main__container:hover::-webkit-scrollbar-thumb {

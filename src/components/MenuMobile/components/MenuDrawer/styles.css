@@ -1,0 +1,32 @@
+.menu-mobile__drawer_closed {
+  display: none;
+}
+
+.menu-mobile__drawer_expanded {
+  display: block;
+}
+
+.menu-mobile__drawer_expanded hr {
+  width: 25px;
+  margin-left: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-mobile__drawer_expanded {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1.5rem 1rem 1rem;
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+  }
+
+  .menu-mobile__drawer_closed {
+    display: none;
+  }
+}

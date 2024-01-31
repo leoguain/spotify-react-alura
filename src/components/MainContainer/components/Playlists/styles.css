@@ -7,35 +7,6 @@
   padding: 1rem;
 }
 
-.main__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 0.5rem;
-}
-
-.main__link {
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.25rem;
-  text-decoration: none;
-}
-
-.main__link:hover {
-  text-decoration: underline;
-}
-
-.default__link {
-  color: var(--text-color);
-  font-weight: 700;
-  font-size: 0.875rem;
-  text-decoration: none;
-}
-
-.default__link:hover {
-  text-decoration: underline;
-}
-
 .items__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

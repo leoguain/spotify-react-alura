@@ -1,0 +1,11 @@
+.column__title {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.column__links ul {
+  margin: 1rem 0;
+  list-style: none;
+  padding: 0;
+}

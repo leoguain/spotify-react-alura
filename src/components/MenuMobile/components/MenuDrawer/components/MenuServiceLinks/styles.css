@@ -1,0 +1,10 @@
+.services__menu {
+  width: 100%;
+}
+
+.services__menu ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1rem;
+}

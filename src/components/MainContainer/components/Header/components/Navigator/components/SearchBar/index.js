@@ -17,7 +17,7 @@ export const SearchBar = () => {
 
   return (
     <div className="search__container">
-      <img src={search} alt="Seta Esquerda" />
+      <img src={search} alt="" />
       <input
         id="search-input"
         type="text"

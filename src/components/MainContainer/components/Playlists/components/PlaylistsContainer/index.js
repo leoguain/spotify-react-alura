@@ -8,11 +8,21 @@ import { NoDataContainer } from "../NoDataContainer";
 import { SectionHeader } from "../SectionHeader";
 
 export const PlaylistsContainer = () => {
-  const { searchTerm, loadPlaylists, playlistsList, noDataMsg } = useSearch();
+  const {
+    searchTerm,
+    dataFetched,
+    setDataFetched,
+    loadPlaylists,
+    playlistsList,
+    noDataMsg,
+  } = useSearch();
 
   useEffect(() => {
-    loadPlaylists(searchTerm);
-  }, []);
+    if (!dataFetched) {
+      loadPlaylists(searchTerm);
+      setDataFetched(true);
+    }
+  }, [loadPlaylists, searchTerm, dataFetched, setDataFetched]);
 
   return (
     <div>

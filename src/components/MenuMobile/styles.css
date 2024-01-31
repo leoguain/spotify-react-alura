@@ -1,0 +1,7 @@
+.menu-mobile__container span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2rem;
+}
